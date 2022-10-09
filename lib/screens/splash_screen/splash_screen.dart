@@ -13,7 +13,7 @@ class SplashScreen extends StatelessWidget {
         child: const Center(
           child: Text(
             'Attendance App',
-            style: TextStyle(fontSize: 20),
+            style: TextStyle(fontSize: 20,fontWeight:FontWeight.bold),
           ),
         ),
       ),
