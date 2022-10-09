@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
       title: 'Attendance App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      initialRoute: '/home',
       getPages: [
         GetPage(name: '/', page: () => const SplashScreen()),
         GetPage(name: '/home', page: () => const HomeScreen()),
