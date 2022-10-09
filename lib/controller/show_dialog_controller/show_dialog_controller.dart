@@ -6,27 +6,5 @@ import 'package:get/get.dart';
 class ShowDialogController extends GetxController {
   TextEditingController subjectTextController = TextEditingController();
   TextEditingController classTextController = TextEditingController();
-  List subjectName = [].obs;
-  RxList departmentName = [].obs;
 
-  @override
-  void onClose() {
-    super.onClose();
-    classTextController.clear();
-    subjectTextController.clear();
-  }
-
-  void saveDialog() {
-    subjectName.add([subjectTextController.text]);
-    subjectTextController.clear();
-    departmentName.add([classTextController.text]);
-    departmentName.clear();
-    print(subjectName);
-    Get.back();
-  }
-
-  void closeDialog() {
-    Get.back();
-    print(subjectName);
-  }
 }
