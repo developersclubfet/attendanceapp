@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -12,6 +12,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('AttendanceApp'),
+        elevation:0,
       ),
       body: ListView.builder(
         itemCount: showDialogController.subjectName.length,
